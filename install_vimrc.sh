@@ -1,4 +1,4 @@
-cd ~/.vim_runtime
+cd C:/.vim_runtime
 
 echo 'set runtimepath+=C:/.vim_runtime
 
