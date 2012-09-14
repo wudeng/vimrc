@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='E:/erlang-proj/dzhz-erlang'
 let g:netrw_dirhist_2='E:/erlang-proj/dzhz-erlang/src'
+let g:netrw_dirhist_3='E:/erlang-proj/dzhz-erlang'
+let g:netrw_dirhist_4='E:/erlang-proj/dzhz-erlang/src'
