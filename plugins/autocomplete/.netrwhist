@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='E:/erlang-proj/dzhz-erlang'
-let g:netrw_dirhist_2='E:/erlang-proj/dzhz-erlang/src'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='E:/data_struct/trunk/RadixTree/src'
+let g:netrw_dirhist_2='E:/data_struct/trunk/RadixTree'
+let g:netrw_dirhist_3='E:/data_struct/trunk/RadixTree/test'
+let g:netrw_dirhist_4='E:/data_struct/trunk/RadixTree/test/ds'
+let g:netrw_dirhist_5='E:/data_struct/trunk/RadixTree/test/ds/tree'
+let g:netrw_dirhist_6='E:/data_struct/trunk/RadixTree/test/ds/tree/test'
+let g:netrw_dirhist_7='E:/erlang/erlang-data-structures'
+let g:netrw_dirhist_8='E:/erlang/erlang-data-structures/finger_tree'
+let g:netrw_dirhist_9='E:/erlang/erlang-data-structures/finger_tree/src'

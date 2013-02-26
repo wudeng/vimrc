@@ -399,6 +399,7 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 autocmd BufWrite *.erl :call DeleteTrailingWS()
 autocmd BufWrite *.hrl :call DeleteTrailingWS()
+autocmd BufWrite *.lua :call DeleteTrailingWS()
 
 " 重启后撤销历史可用 persistent undo
 set undofile
