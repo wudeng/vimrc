@@ -88,10 +88,11 @@ set completeopt=longest,menu
 "let g:winManagerWindowLayout='FileExplorer|TagList'
 "map <leader>wm :WMToggle<CR>
 "Taglist
-"let Tlist_Show_One_File=1
-"let Tlist_Exit_OnlyWindow=1
-"let Tlist_GainFocus_On_ToggleOpen=1
-"nnoremap <silent> <F8> :TlistToggle<CR>
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_Use_Right_Window=1
+
 "ctags
 "set tags=E:\erlang-proj\dzhz-erlang\tags
 set tags=./tags;/
@@ -141,7 +142,6 @@ set nowb
 set noswapfile      " 不使用swp文件，注意，错误退出后无法恢复
 set lbr             " 在breakat字符处而不是最后一个字符处断行
 set tw=500
-set ai              " 自动缩进
 set si              " 智能缩进
 set cindent         " C/C++风格缩进
 set wildmenu
@@ -150,7 +150,7 @@ set nofen
 set ruler
 set cmdheight=2
 set fdl=10
-set ff=dos
+set ff=unix
 set switchbuf=useopen,usetab ",newtab
 set noerrorbells
 set novisualbell
@@ -161,7 +161,7 @@ set foldenable
 let erlang_folding = 1
 let erlang_skel_header = {"Author" : "wudeng", "owner" : "fangyun"}
 
-set ffs=dos,unix,mac
+set ffs=unix,dos,mac
 
 map j gj
 map k gk
@@ -386,6 +386,7 @@ fu! RestoreSess()
 syntax on
 endfunction
 
+autocmd VimLeave * NERDTreeClose
 autocmd VimLeave * call SaveSess()
 " autocmd VimEnter * call RestoreSess()
 
@@ -395,11 +396,11 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
-autocmd BufWrite *.erl :call DeleteTrailingWS()
-autocmd BufWrite *.hrl :call DeleteTrailingWS()
-autocmd BufWrite *.lua :call DeleteTrailingWS()
+" autocmd BufWrite *.py :call DeleteTrailingWS()
+" autocmd BufWrite *.coffee :call DeleteTrailingWS()
+" autocmd BufWrite *.erl :call DeleteTrailingWS()
+" autocmd BufWrite *.hrl :call DeleteTrailingWS()
+" autocmd BufWrite *.lua :call DeleteTrailingWS()
 
 " 重启后撤销历史可用 persistent undo
 set undofile
@@ -414,6 +415,7 @@ let g:vimwiki_list = [{'path' : 'D:/My\ Documents/Dropbox/Public/vimwiki/',
             \'path_html': 'D:/My\ Documents/Dropbox/Public/vimwiki/html/'}]
 let g:acp_behaviorSnipmateLength = 1
 map <F9> :Calendar<cr>
+map <F8> :NERDTreeToggle<cr>
 
 map <leader>F :FufFile!<CR>
 map <leader>f :FufTaggedFile!<CR>
