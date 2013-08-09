@@ -1,6 +1,13 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
+<<<<<<< HEAD
 let g:netrw_dirhist_1='E:/erlang/erlcron'
 let g:netrw_dirhist_2='E:/erlang/eper'
 let g:netrw_dirhist_3='E:/erlang/webgame'
 let g:netrw_dirhist_4='E:/jy-proj/trunk'
+=======
+let g:netrw_dirhist_1='E:/erlang-proj/dzhz-erlang'
+let g:netrw_dirhist_2='E:/erlang-proj/dzhz-erlang/src'
+let g:netrw_dirhist_3='E:/erlang-proj/dzhz-erlang'
+let g:netrw_dirhist_4='E:/erlang-proj/dzhz-erlang/src'
+>>>>>>> 89b048436f98c45f8d88cf376ec5c63d74718da8
