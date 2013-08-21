@@ -159,7 +159,7 @@ set tm=500
 set foldenable
 " vimerl
 let erlang_folding = 1
-let erlang_skel_header = {"Author" : "wudeng", "owner" : "fangyun"}
+let erlang_skel_header = {"Author" : "wudeng@4399.net", "owner" : "fangyun"}
 
 set ffs=unix,dos,mac
 
